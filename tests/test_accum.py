@@ -1,12 +1,5 @@
 import pytest
 
-from stuff.accum import Accumulator
-
-
-@pytest.fixture
-def accum() -> Accumulator:
-    return Accumulator()
-
 
 def test_accumulator_init(accum):
     assert accum.count == 0
